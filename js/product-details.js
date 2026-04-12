@@ -24,14 +24,14 @@ const productsData = [
         id: 4,
         name: "Soft Grey Pants",
         price: 150,
-        image: "image/9.JPG",
+        image: "image/9.jpg",
         description: "Soft grey pants with a clean and comfortable cut. Suitable for both work and casual wear."
     },
     {
         id: 5,
         name: "Chic Off-Shoulder Top",
         price: 175,
-        image: "image/5.JPG",
+        image: "image/5.jpg",
         description: "A chic off-shoulder top that adds elegance and charm to your outfit. Great for parties, dinners, and stylish everyday looks."
     },
     {
@@ -52,28 +52,28 @@ const productsData = [
         id: 8,
         name: "Wide Leg Trousers",
         price: 190,
-        image: "image/8.JPG",
+        image: "image/8.jpg",
         description: "Wide leg trousers with a modern silhouette and relaxed fit. Comfortable and fashionable for many occasions."
     },
     {
         id: 9,
         name: "Minimal Beige Shirt",
         price: 160,
-        image: "image/10.JPG",
+        image: "image/11.jpg",
         description: "A minimal beige shirt that delivers a clean and sophisticated look. Ideal for a smart casual wardrobe."
     },
     {
         id: 10,
         name: "Floral Midi Dress",
         price: 210,
-        image: "image/1.jpg",
+        image: "image/10.jpg",
         description: "A feminine floral midi dress with graceful style and soft details. A lovely option for daytime events or weekend outings."
     },
     {
         id: 11,
         name: "Denim Cropped Jacket",
         price: 230,
-        image: "image/4.JPG",
+        image: "image/4.jpg",
         description: "A trendy denim cropped jacket that works well with dresses, tops, and high-waisted pants. Stylish and versatile."
     }
 ];

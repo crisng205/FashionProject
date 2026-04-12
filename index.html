@@ -5,75 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh Shop</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">Thanh Shop</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" title="Login"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="cart.html" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="promo-banner" id="promoBanner">Summer Sale - Up to 50% Off on Selected Items!</div>
-        <h1 id="hero-title">Welcome to Thanh Shop</h1>
-        <p>Discover the best products at the lowest prices!</p>
+        <h1 id="promoTitle">Welcome to Thanh Shop</h1>
         <a href="products.html">Shop Now</a>
     </section>
 
     <section class="features">
         <h2>Featured Products</h2>
 
-        <div class="slider-controls">
-            <button id="prevBtn">Previous</button>
-            <button id="nextBtn">Next</button>
-        </div>
-
-        <div class="product-grid" id="productGrid">
-            <div class="product-card" data-category="dress">
-                <img src="image/1.jpg" alt="Elegant Black Dress">
-                <h3>Elegant Black Dress</h3>
-                <p>$100.00</p>
-            </div>
-
-            <div class="product-card" data-category="dress">
-                <img src="image/2.jpg" alt="Casual Grey Hoodie Dress">
-                <h3>Casual Grey Hoodie Dress</h3>
-                <p>$200.00</p>
-            </div>
-
-            <div class="product-card" data-category="shirt">
-                <img src="image/3.jpg" alt="Classic White Top and Black Skirt">
-                <h3>Classic White Top &amp; Black Skirt</h3>
-                <p>$250.00</p>
-            </div>
-
-            <div class="product-card" data-category="pants">
-                <img src="image/9.JPG" alt="Soft Grey Lounge Set">
-                <h3>Soft Grey Pants</h3>
-                <p>$150.00</p>
-            </div>
-
-            <div class="product-card" data-category="shirt">
-                <img src="image/5.JPG" alt="Chic Off-Shoulder Top">
-                <h3>Chic Off-Shoulder Top</h3>
-                <p>$175.00</p>
-            </div>
-
-            <div class="product-card" data-category="dress">
-                <img src="image/6.jpg" alt="Mini Black Summer Dress">
-                <h3>Mini Black Summer Dress</h3>
-                <p>$200.00</p>
-            </div>
+        <div id="productGrid" class="product-grid">
+            <a href="product-details.html?id=1" class="product-link" data-category="dress">
+                <div class="product-card">
+                    <img src="image/1.jpg" alt="Elegant Black Dress">
+                    <h3>Elegant Black Dress</h3>
+                    <p>$100.00</p>
+                </div>
+            </a>
+        
+            <a href="product-details.html?id=2" class="product-link" data-category="dress">
+                <div class="product-card">
+                    <img src="image/2.jpg" alt="Casual Grey Hoodie Dress">
+                    <h3>Casual Grey Hoodie Dress</h3>
+                    <p>$200.00</p>
+                </div>
+            </a>
+        
+            <a href="product-details.html?id=3" class="product-link" data-category="shirt">
+                <div class="product-card">
+                    <img src="image/3.jpg" alt="Classic White Top & Black Skirt">
+                    <h3>Classic White Top & Black Skirt</h3>
+                    <p>$250.00</p>
+                </div>
+            </a>
+        
+            <a href="product-details.html?id=4" class="product-link" data-category="pants">
+                <div class="product-card">
+                    <img src="image/9.jpg" alt="Soft Grey Pants">
+                    <h3>Soft Grey Pants</h3>
+                    <p>$150.00</p>
+                </div>
+            </a>
+        
+            <a href="product-details.html?id=6" class="product-link" data-category="dress">
+                <div class="product-card">
+                    <img src="image/6.jpg" alt="Mini Black Summer Dress">
+                    <h3>Mini Black Summer Dress</h3>
+                    <p>$200.00</p>
+                </div>
+            </a>
+        
+            <a href="product-details.html?id=7" class="product-link" data-category="shirt">
+                <div class="product-card">
+                    <img src="image/7.jpg" alt="Classic Leather Jacket">
+                    <h3>Classic Leather Jacket</h3>
+                    <p>$280.00</p>
+                </div>
+            </a>
+        
+            <a href="product-details.html?id=8" class="product-link" data-category="pants">
+                <div class="product-card">
+                    <img src="image/8.jpg" alt="Wide Leg Trousers">
+                    <h3>Wide Leg Trousers</h3>
+                    <p>$190.00</p>
+                </div>
+            </a>
         </div>
     </section>
 
     <section class="categories">
         <h2>Shop by Category</h2>
+    
         <div class="filters">
             <button class="filter-btn active" data-category="all">All</button>
             <button class="filter-btn" data-category="dress">Dress</button>
