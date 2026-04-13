@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh Shop</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/change.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
@@ -14,12 +15,89 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
                 <li><a href="login.html" title="Login"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="cart.html" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li>
+                    <button onclick="changemode()" id="btn" class="theme-btn" title="Change theme">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
+
+    <div class="hero-content">
+        <h1>About Thanh Shop</h1>
+        <p>
+            Thanh Shop is a modern fashion brand dedicated to bringing stylish,
+            elegant, and affordable clothing to everyone. We believe fashion is
+            not only about appearance but also about confidence and self-expression.
+        </p>
+    </div>
+
+    <div class="about-container">
+        <div class="about-card">
+            <h2>Our Company</h2>
+            <p>
+                Founded with a passion for fashion, Thanh Shop focuses on offering
+                carefully selected clothing pieces that match modern lifestyles.
+                From casual everyday outfits to elegant statement pieces, we aim to
+                provide quality products that help customers express their own style.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to make fashion simple, accessible, and inspiring.
+                We want every customer to feel confident in what they wear and enjoy
+                a smooth, enjoyable shopping experience with Thanh Shop.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h2>Our Vision</h2>
+            <p>
+                Our vision is to become a trusted fashion destination known for style,
+                quality, and customer satisfaction. We strive to grow as a brand that
+                inspires confidence and creativity through fashion.
+            </p>
+        </div>
+    </div>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+
+        <div class="team-container">
+            <div class="team-card">
+                <img src="image/team1.jpg" alt="Founder">
+                <h3>Thanh Nguyen</h3>
+                <p class="role">Founder</p>
+                <p>Leads the vision and direction of Thanh Shop with passion for style and creativity.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="image/team2.jpg" alt="Fashion Designer">
+                <h3>Lisa Tran</h3>
+                <p class="role">Fashion Designer</p>
+                <p>Creates modern and elegant fashion ideas that shape the identity of the brand.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="image/team3.jpg" alt="Marketing Manager">
+                <h3>David Pham</h3>
+                <p class="role">Marketing Manager</p>
+                <p>Builds strong connections with customers and helps share the Thanh Shop story.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/change.js"></script>
+
+    <footer>
+        <p>&copy; 2026 Thanh Shop. All rights reserved.</p>
+    </footer>
 </body>
 </html>

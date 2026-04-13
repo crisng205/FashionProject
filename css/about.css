@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #555;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 25px;
+}
+
+.about-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.about-card h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+.team-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+    color: #111;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.team-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.team-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.team-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.team-card .role {
+    font-size: 15px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.team-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+}
