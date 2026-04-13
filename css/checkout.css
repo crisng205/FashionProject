@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+.checkout-section{
+    padding: 50px 40px;
+}
+
+.checkout-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.checkout-form,
+.summary-box{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.checkout-form h1,
+.summary-box h2{
+    margin-bottom: 24px;
+    font-size: 35px;
+    color: black;
+}
+
+.form-group label{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.form-group input,
+.form-group select{
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #d8d8d8;
+    border-radius: 12px;
+    background-color: #fff;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.checkout-btn{
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.checkout-btn:hover{
+    background-color: green;   
+}
+
+.summary-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.summary-item img {
+    width: 80px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.summary-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.summary-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.order-total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+}
+
+.empty-order {
+    font-size: 16px;
+    color: #555;
+}
+
+.error-text {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #d11a2a;
+    min-height: 16px;
+}
+
+.error-input {
+    border-color: #d11a2a !important;
+}
+
+.confirmation-message {
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}

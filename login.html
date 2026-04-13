@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Shop</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Thanh Shop</div>
+        <nav>
+            <ul>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" title="Login"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="cart.html" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-box">
+            <h1>Login</h1>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email">
+                    <small class="error-text" id="loginEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                    <small class="error-text" id="loginPasswordError"></small>
+                </div>
+
+                <button type="submit" class="auth-btn">Login</button>
+                <p id="loginMessage" class="auth-message"></p>
+            </form>
+
+            <p class="auth-link">
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Thanh Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
