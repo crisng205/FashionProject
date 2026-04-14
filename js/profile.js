@@ -1,35 +1,32 @@
-const profileForm = document.getElementById("profileForm");
 const profileName = document.getElementById("profileName");
 const profileEmail = document.getElementById("profileEmail");
 
-const profileNameError = document.getElementById("profileNameError");
-const profileEmailError = document.getElementById("profileEmailError");
+const profileNameError = document.getElementById("nameError");
+const profileEmailError = document.getElementById("emailError");
 const profileMessage = document.getElementById("profileMessage");
 
+const saveProfileBtn = document.getElementById("saveProfileBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 
-window.onload = function () {
+window.addEventListener("load", function () {
     let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
     if (currentUser) {
-        profileName.value = currentUser.name;
-        profileEmail.value = currentUser.email;
+        profileName.value = currentUser.name || "";
+        profileEmail.value = currentUser.email || "";
     } else {
         profileMessage.style.color = "red";
         profileMessage.textContent = "No user logged in.";
     }
-};
+});
 
-profileForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
+saveProfileBtn.addEventListener("click", function () {
     profileNameError.textContent = "";
     profileEmailError.textContent = "";
     profileMessage.textContent = "";
 
     let name = profileName.value.trim();
     let email = profileEmail.value.trim();
-
     let valid = true;
 
     if (name === "") {
@@ -55,6 +52,8 @@ profileForm.addEventListener("submit", function (event) {
         return;
     }
 
+    const oldEmail = currentUser.email;
+
     currentUser.name = name;
     currentUser.email = email;
 
@@ -63,7 +62,7 @@ profileForm.addEventListener("submit", function (event) {
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
     users = users.map(function (user) {
-        if (user.email === currentUser.email) {
+        if (user.email === oldEmail) {
             return {
                 ...user,
                 name: name,

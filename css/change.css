@@ -13,56 +13,12 @@
 
 body.light {
     background-color: #f5f5f5;
-    color: #111;
 }
 
 body.dark {
     background-color: #111;
-    color: #fff;
 }
 
-body.dark header,
-body.dark .auth-box,
-body.dark .profile-box,
-body.dark .contact-box,
-body.dark .about-card,
-body.dark .team-card,
-body.dark .product-card,
-body.dark .product-info,
-body.dark .product-image-box,
-body.dark .checkout-form,
-body.dark .summary-box,
-body.dark .cart-item,
-body.dark .contact-box,
-body.dark .about-container .about-card {
-    background-color: #1f1f1f;
-    color: #fff;
-}
-
-body.dark .logo,
-body.dark nav ul li a,
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark p,
-body.dark label,
-body.dark small {
-    color: #fff;
-}
-
-body.dark input,
-body.dark textarea,
-body.dark select {
-    background-color: #2a2a2a;
-    color: #fff;
-    border: 1px solid #555;
-}
-
-body.dark footer {
-    background-color: #000;
-    color: #fff;
-}
-
-body.dark .theme-btn {
-    color: #fff;
+body.dark .cart-total{
+    color: #f5f5f5
 }

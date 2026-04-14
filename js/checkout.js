@@ -6,16 +6,21 @@ const paymentMethod = document.getElementById("paymentMethod");
 const orderSummary = document.getElementById("orderSummary");
 const orderTotal = document.getElementById("orderTotal");
 
+const successModal = document.getElementById("successModal");
+const modalText = document.getElementById("modalText");
+const closeModalBtn = document.getElementById("closeModalBtn");
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-const confirmationMessage = document.createElement("p");
-confirmationMessage.className = "confirmation-message";
-checkoutForm.appendChild(confirmationMessage);
-
 function createErrorElement(input) {
-    const error = document.createElement("small");
-    error.className = "error-text";
-    input.parentElement.appendChild(error);
+    let error = input.parentElement.querySelector(".error-text");
+
+    if (!error) {
+        error = document.createElement("small");
+        error.className = "error-text";
+        input.parentElement.appendChild(error);
+    }
+
     return error;
 }
 
@@ -66,7 +71,6 @@ function clearErrors() {
 
 function validateForm() {
     clearErrors();
-    confirmationMessage.textContent = "";
 
     let isValid = true;
 
@@ -95,8 +99,8 @@ checkoutForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
     if (cart.length === 0) {
-        confirmationMessage.style.color = "#d11a2a";
-        confirmationMessage.textContent = "Your cart is empty. Please add products before checking out.";
+        modalText.textContent = "Your cart is empty. Please add products before checking out.";
+        successModal.style.display = "flex";
         return;
     }
 
@@ -104,8 +108,8 @@ checkoutForm.addEventListener("submit", function (event) {
         return;
     }
 
-    confirmationMessage.style.color = "green";
-    confirmationMessage.textContent = `Order placed successfully, ${fullName.value.trim()}!`;
+    modalText.textContent = `Order placed successfully, ${fullName.value.trim()}!`;
+    successModal.style.display = "flex";
 
     localStorage.removeItem("cart");
     cart = [];
@@ -114,4 +118,8 @@ checkoutForm.addEventListener("submit", function (event) {
     clearErrors();
 });
 
+closeModalBtn.addEventListener("click", function () {
+    successModal.style.display = "none";
+});
+    
 renderOrderSummary();

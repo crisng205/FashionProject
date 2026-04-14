@@ -39,8 +39,7 @@ function loginUser(event) {
 
     message.style.color = "green";
     message.textContent = "Login successful!";
-
-    document.getElementById("loginForm").reset();
+    window.location.href = "index.html";
 }
     
 document.getElementById("loginForm").addEventListener("submit", loginUser);
